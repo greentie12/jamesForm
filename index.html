@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=Purchase forms, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Purchase Form</title>
+  </head>
+  <link rel="stylesheet" href="css/main.css" />
+
+  <body>
+    <img src="images/asu-2-logo-png-transparent.png" alt="ASU logo" />
+    <h2>Payment Form</h2>
+    <p style="color: red; font-weight: bold">
+      All fields are <font style="font-size: 20px">REQUIRED</font>
+    </p>
+    <form>
+      <div class="payment-div">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" />
+      </div>
+
+      <div class="payment-div">
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" />
+      </div>
+
+      <div class="payment-div">
+        <label for="address">Street Address</label>
+        <input type="text" name="address" />
+      </div>
+
+      <div class="payment-div">
+        <label for="city">City</label>
+        <input type="text" name="city" />
+      </div>
+
+      <div class="payment-div">
+        <label for="state">State</label>
+        <input type="text" name="state" />
+      </div>
+
+      <div class="payment-div">
+        <label for="zip">ZIP/Postal Code</label>
+        <input type="text" name="zip" />
+      </div>
+
+      <div class="payment-div-card">
+        <label for="cardtype">Credit Card Type</label>
+
+        <div class="type">
+          <input type="radio" id="master" name="cardtype" value="MasterCard" />
+          <label for="master ">MasterCard</label>
+        </div>
+
+        <div class="type">
+          <input type="radio" id="visa" name="cardtype" value="VISA" />
+          <label for="visa">Visa</label>
+        </div>
+
+        <div class="type">
+          <input type="radio" id="discover" name="cardtype" value="Discover" />
+          <label for="discover">Discover</label>
+        </div>
+      </div>
+
+      <div class="payment-div">
+        <label for="cardnum"> Credit Card Number</label>
+        <input type="text" name="cardnum" />
+      </div>
+
+      <div class="payment-div">
+        <label for="expMonth"> Expiration Date</label>
+        <select name="expMonth" style="width: '80px'">
+          <option>--Month--</option>
+          <option value="Jan">Jan</option>
+          <option value="Feb">Feb</option>
+          <option value="Mar">Mar</option>
+          <option value="Apr">Apr</option>
+          <option value="May">May</option>
+          <option value="Jun">Jun</option>
+          <option value="Jul">Jul</option>
+          <option value="Aug">Aug</option>
+          <option value="Sep">Sep</option>
+          <option value="Oct">Oct</option>
+          <option value="Nov">Nov</option>
+          <option value="Dec">Dec</option>
+        </select>
+        <select name="expYear">
+          <option>--Year--</option>
+          <option value="2013">2013</option>
+          <option value="2014">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+        </select>
+      </div>
+
+      <div class="payment-div">
+        <label for="txt-com">Special Notes</label>
+        <textarea
+          rows="8"
+          cols="30"
+          name="txt-com"
+          placeholder="Enter comment"
+        ></textarea>
+      </div>
+      <input type="submit" class="btn" value="Submit Payment" />
+    </form>
+  </body>
+</html>
